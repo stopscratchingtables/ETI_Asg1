@@ -58,6 +58,9 @@ This assignment uses MySQL, GoLang and API Implementation with the use of Micro-
 
 ## Domain Driven Design Architecture Diagrams
 
+The domain of this application is the Ride Sharing Platform.
+The subdomains are the Driver, Passenger and Ride. The driver is the core subdomain out of all the three as it is the most essential to ensure the Ride-Sharing Platform is running. Ride and passenger are supporting subdomains as they are not as essential to the processes of a ride-sharing platform but instead, acts as a supoort for the core subdomain "Driver".
+
 ![Ride Sharing Platform Domain Driven Design Diagram](https://github.com/stopscratchingtables/ETI_Asg1/blob/main/Ride-Sharing%20Platform%20Domain%20Driven%20Design.png?raw=true)
 
 <a name="microservices"/>
