@@ -12,7 +12,7 @@
 
 [Console Functions](#confunc)
 
-## Contents
+## Introduction
 
 <a name="introduction"/>
 Ride Sharing platform is a platform where passengers can book a ride and will get allocated a driver. The driver will be able to end the ride as well. 
@@ -48,14 +48,17 @@ This assignment uses MySQL, GoLang and API Implementation with the use of Micro-
 
 ## Instructions on setting up and running microservices
 
-1. Run "sqlTables.sql" on MySQL
-2. Run "driversAPI.go" in "microservice - drivers" at port 1000
-3. Run "rideAPI.go" in "microservice - ride" at port 5000
-4. Run "passangersAPI.go" in "microservice - passengers" at port 6969
-5. Run "main.go" in consoleFolder in command prompt
+1. Run the SQL code in "sqlTables.sql" on MySQL
+2. Run the golang code in "driversAPI.go" in "microservice - drivers" at port 1000
+3. Run the golang code in "rideAPI.go" in "microservice - ride" at port 5000
+4. Run the golang code in "passangersAPI.go" in "microservice - passengers" at port 6969
+5. Run "main.go" in consoleFolder using command prompt terminal
 
 <a name="arcdiagram"/>
 
+## Domain Driven Design Architecture Diagrams
+
+![Ride Sharing Platform Domain Driven Design Diagram](https://github.com/stopscratchingtables/ETI_Asg1/blob/main/Ride-Sharing%20Platform%20Domain%20Driven%20Design.png?raw=true)
 
 <a name="microservices"/>
 
@@ -103,10 +106,12 @@ This service performs most of the required tasks and duties of a passenger in th
 ## Console Functions
 
 #### Passenger functions
-
-
+- Book Ride
+- View Riding History
+- Update Account Details
 
 #### Driver functions
-
+- End Ride
+- Update Account Details
 
 
