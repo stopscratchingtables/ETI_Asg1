@@ -7,7 +7,7 @@ CREATE database my_db;
 USE my_db;
 
 CREATE TABLE Passenger (ID varchar(20) NOT NULL PRIMARY KEY, FirstName VARCHAR(50), LastName VARCHAR(50), MobileNum CHAR(8), EmailAddress varchar(50) NOT NULL);
-INSERT INTO Passenger (ID, FirstName, LastName, MobileNum, EmailAddress) VALUES ("P0001", "Marcus", "Hon", "12345678", "sexydude@np.edu.sg"); 
+INSERT INTO Passenger (ID, FirstName, LastName, MobileNum, EmailAddress) VALUES ("P0001", "Marcus", "Hon", "12345678", "wrongemail@np.edu.sg"); 
 INSERT INTO Passenger (ID, FirstName, LastName, MobileNum, EmailAddress) VALUES ("P0054", "Patino", "Fernandez", "74443345", "pat@np.edu.sg"); 
 
 CREATE TABLE Driver (ID varchar (20) NOT NULL PRIMARY KEY, FirstName VARCHAR(50), LastName VARCHAR(50), EmailAddress varchar(50), MobileNum CHAR(8), DriverStatus enum('Available', 'Busy'), LicenceNumber INT NOT NULL);
