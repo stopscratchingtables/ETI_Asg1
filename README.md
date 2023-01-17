@@ -78,10 +78,15 @@ Description:
 This service performs most of the required tasks and duties of a passenger in the ride-sharing platform. Necessary information is obtained from the passenger and ride tables from this database.
 
 1. GET Passenger (From Passenger Table)
-2. POST Passenger (From Passenger Table)
-3. PUT Passenger (From Passenger Table)
-4. DELETE Passenger (From Passenger Table)
-5. GET Available Rides (From Ride Table)
+
+GET -> "http://localhost:6969/api/v1/passenger"
+GET by history -> "http://localhost:6969/api/v1/passenger?history=" + userID
+
+2. PUT Passenger (From Passenger Table)
+
+PUT -> "http://localhost:6969/api/v1/passenger/" + userID
+
+3. GET Available Rides (From Ride Table)
 
 #### Driver Micro-Service
 
@@ -89,8 +94,16 @@ Description:
 This service performs most of the required tasks and duties of a driver in the ride-sharing platform. Necessary information is obtained from the driver and ride tables from this database.
 
 1. GET Driver (From Driver Table)
+
+GET -> "http://localhost:1000/api/v1/driver"
+GET Driver by History -> "http://localhost:1000/api/v1/Driver/History"
+Get Driver by Available -> "http://localhost:1000/api/v1/driver?driverstatus=available"
+
 2. POST Driver (From Driver Table)
 3. PUT Driver (From Driver Table)
+
+PUT -> "http://localhost:1000/api/v1/driver/" + driverID
+
 4. DELETE Driver (From Driver Table)
 5. GET Available Rides (From Ride Table)
 
@@ -100,9 +113,16 @@ Description:
 This service performs most of the required tasks and duties of a passenger in the ride-sharing platform. Necessary information is obtained from the ride tables from the database. This micro-service works in conjunction with ride and driver micro-services to get the necessary information required from each other.
 
 1. GET Rides (From Ride Table)
+
+GET rides by inprogress -> "http://localhost:5000/api/v1/ride?tripstatus=inprogress"
+GET Open Rides "http://localhost:5000/api/v1/Ride/Open"
+
 2. POST Rides (From Ride Table)
+POST -> http://localhost:5000/api/v1/ride/" + rideId
+
 3. PUT Ride (From Ride Table)
-4. DELETE Ride (From Ride Table)
+
+PUT -> http://localhost:5000/api/v1/ride/" + rideId
 
 <a name="confunc"/>
 
